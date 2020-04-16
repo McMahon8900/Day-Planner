@@ -43,3 +43,14 @@ $(document).ready( function() {
     colorHrChange ();
 });
 
+var words;
+
+//Function to listen for onClicks for each hour block
+$(".saveBtn").click(function() {
+    words = $(this).siblings(".input").val();
+    console.log(words);
+    hourBlock = $(this).siblings(".hour").text();
+
+    
+    colorHrChange ();
+});
